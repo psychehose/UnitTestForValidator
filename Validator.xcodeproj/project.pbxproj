@@ -13,7 +13,18 @@
 		773012C029C17E370084D2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773012BF29C17E370084D2A3 /* Assets.xcassets */; };
 		773012C329C17E370084D2A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773012C129C17E370084D2A3 /* LaunchScreen.storyboard */; };
 		773012CB29C1A7A70084D2A3 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773012CA29C1A7A70084D2A3 /* Validator.swift */; };
+		773012D629C1AD1D0084D2A3 /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773012D529C1AD1D0084D2A3 /* ValidatorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		773012D729C1AD1D0084D2A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 773012AB29C17E360084D2A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 773012B229C17E360084D2A3;
+			remoteInfo = Validator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		773012B329C17E360084D2A3 /* Validator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Validator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,19 @@
 		773012C229C17E370084D2A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		773012C429C17E370084D2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773012CA29C1A7A70084D2A3 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		773012D329C1AD1D0084D2A3 /* ValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		773012D529C1AD1D0084D2A3 /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		773012B029C17E360084D2A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773012D029C1AD1D0084D2A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				773012B529C17E360084D2A3 /* Validator */,
+				773012D429C1AD1D0084D2A3 /* ValidatorTests */,
 				773012B429C17E360084D2A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				773012B329C17E360084D2A3 /* Validator.app */,
+				773012D329C1AD1D0084D2A3 /* ValidatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +113,14 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		773012D429C1AD1D0084D2A3 /* ValidatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				773012D529C1AD1D0084D2A3 /* ValidatorTests.swift */,
+			);
+			path = ValidatorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,6 +141,24 @@
 			productReference = 773012B329C17E360084D2A3 /* Validator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		773012D229C1AD1D0084D2A3 /* ValidatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 773012D929C1AD1D0084D2A3 /* Build configuration list for PBXNativeTarget "ValidatorTests" */;
+			buildPhases = (
+				773012CF29C1AD1D0084D2A3 /* Sources */,
+				773012D029C1AD1D0084D2A3 /* Frameworks */,
+				773012D129C1AD1D0084D2A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				773012D829C1AD1D0084D2A3 /* PBXTargetDependency */,
+			);
+			name = ValidatorTests;
+			productName = ValidatorTests;
+			productReference = 773012D329C1AD1D0084D2A3 /* ValidatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -123,6 +171,10 @@
 				TargetAttributes = {
 					773012B229C17E360084D2A3 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					773012D229C1AD1D0084D2A3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 773012B229C17E360084D2A3;
 					};
 				};
 			};
@@ -140,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				773012B229C17E360084D2A3 /* Validator */,
+				773012D229C1AD1D0084D2A3 /* ValidatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +204,13 @@
 			files = (
 				773012C329C17E370084D2A3 /* LaunchScreen.storyboard in Resources */,
 				773012C029C17E370084D2A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773012D129C1AD1D0084D2A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +228,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		773012CF29C1AD1D0084D2A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773012D629C1AD1D0084D2A3 /* ValidatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		773012D829C1AD1D0084D2A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 773012B229C17E360084D2A3 /* Validator */;
+			targetProxy = 773012D729C1AD1D0084D2A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		773012C129C17E370084D2A3 /* LaunchScreen.storyboard */ = {
@@ -350,6 +426,50 @@
 			};
 			name = Release;
 		};
+		773012DA29C1AD1D0084D2A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83LNUYN53Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.hose.ValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Validator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Validator";
+			};
+			name = Debug;
+		};
+		773012DB29C1AD1D0084D2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83LNUYN53Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.hose.ValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Validator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Validator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -367,6 +487,15 @@
 			buildConfigurations = (
 				773012C829C17E370084D2A3 /* Debug */,
 				773012C929C17E370084D2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		773012D929C1AD1D0084D2A3 /* Build configuration list for PBXNativeTarget "ValidatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773012DA29C1AD1D0084D2A3 /* Debug */,
+				773012DB29C1AD1D0084D2A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
